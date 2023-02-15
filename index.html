@@ -21,8 +21,8 @@
         <nav>
           <p>MONTAJ MOBILA</p>
           <ul class="nav-list">
-            <li>CONTACT</li>
-            <li>DESPRE NOI</li>
+            <li><a href="#name">CONTACT</a></li>
+            <li><a href="#projects"> DESPRE NOI</a></li>
           </ul>
         </nav>
 
@@ -35,12 +35,13 @@
           <p>PROGRAMEAZA ACUM</p>
           <p>SERVICII PREMIUM</p>
 
-          <div class="phone-number">
-            <p>0752 888 999</p>
-          </div>
+          <a href="tel:0752 888 999">
+            <p class="phone-number">0752 888 999</p>
+          </a>
         </div>
       </div>
     </section>
+
     <section class="section2">
       <h1>CE TREBUIE SA FACI?</h1>
       <img src="./images/steps.jpg" alt="asamblare mobila" />
@@ -65,7 +66,7 @@
     </section>
 
     <section class="section3">
-      <div class="s3-content">
+      <div class="s3-content" id="projects">
         <h1>LUCRARI REALIZATE</h1>
         <div class="photos">
           <img src="./images/work3.jpg" alt="" />
@@ -85,6 +86,46 @@
       </div>
     </section>
 
+    <section class="section4">
+      <div class="s4-content">
+        <h1>CONTACTEAZA-NE</h1>
+        <div class="contact">
+          <div class="adress">
+            <h3>Contacteaza-ne acum</h3>
+            <p><a href="tel:0752 888 999">0752 888 999</a></p>
+            <p>montajmobila@gmail.com</p>
+            <p>Iasi, str. Nicolina. nr.1</p>
+          </div>
+          <form action="">
+            <h3>Trimite-ne un mesaj si te vom contacta noi</h3>
+            <div class="field">
+              <label for="name">Nume</label>
+              <input type="text" id="name" placeholder="Popescu Mihai" /> <br />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="mihai@gmail.com" />
+              <label for="phone">Telefon</label>
+              <input
+                type="number"
+                id="phone"
+                placeholder="0752 000 000"
+              /><br />
+            </div>
+            <div class="field">
+              <label for="message">Ofera mai multe informatii</label>
+              <input
+                type="text"
+                id="message"
+                placeholder="Am nevoie de ajutor pentru a monta o comoda TV in living"
+              />
+            </div>
+            <br />
+            <button id="send-message">Trimite mesaj</button>
+          </form>
+        </div>
+      </div>
+    </section>
     <script src="./script.js"></script>
   </body>
 </html>
